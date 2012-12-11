@@ -14,4 +14,6 @@ $(function(){
     $toc.append($container);
     $dropdown.html('<div>' + content + '</div>');
     $container.append($dropdown);
+
+    $(".content h1").remove();
 });
