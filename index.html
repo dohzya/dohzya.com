@@ -14,6 +14,7 @@ title: dohzysmes
       <div class="date" style="display:inline"><span>{{ page.date | date_to_long_string }}</span></div>
       —
       <div class="tags" style="display:inline">
+        <i class="icon-tags"></i>
         {% assign tags_list = page.tags %}
         {% for tag in tags_list %}
           <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a>

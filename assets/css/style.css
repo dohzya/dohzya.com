@@ -154,3 +154,12 @@ code {
        -o-box-shadow: 0 0 15px 15px white;
           box-shadow: 0 0 15px 15px white;
 }
+
+h4 .icon-tags {
+  background-position: -25px -44px;
+}
+h4 [class^="icon-"],
+h4 [class*=" icon-"] {
+  width: 18px;
+  height: 20px;
+}
