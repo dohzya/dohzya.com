@@ -9,21 +9,23 @@ title: dohzysmes
 
 <div class="row">
   <div class="span8">
-    <div class="post-header">
-      <h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</a></h2>
-      <div class="date" style="display:inline"><span>{{ page.date | date_to_long_string }}</span></div>
-      —
-      <div class="tags" style="display:inline">
-        <i class="icon-tags"></i>
-        {% assign tags_list = page.tags %}
-        {% for tag in tags_list %}
-          <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a>
-        {% endfor %}
-        {% assign tags_list = nil %}
+    <div class="post">
+      <div class="post-header">
+        <h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</a></h2>
+        <div class="date" style="display:inline"><span>{{ page.date | date_to_long_string }}</span></div>
+        —
+        <div class="tags" style="display:inline">
+          <i class="icon-tags"></i>
+          {% assign tags_list = page.tags %}
+          {% for tag in tags_list %}
+            <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a>
+          {% endfor %}
+          {% assign tags_list = nil %}
+        </div>
       </div>
-    </div>
-    <div class="post-content">
-      {{ content }}
+      <div class="post-content">
+        {{ content }}
+      </div>
     </div>
     <hr>
     <div class="pagination">
