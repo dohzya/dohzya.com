@@ -5,6 +5,7 @@ permalink: /:categories/:year-:month-:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock"]
 auto: true
 pygments: true
+future: false
 
 # markdown: redcarpet
 # redcarpet:
