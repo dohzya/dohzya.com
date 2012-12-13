@@ -15,12 +15,79 @@ html {
   src: url('/assets/fonts/CourierBulletNotDone.ttf');
 }
 body {
-  /*background: rgb(90%,90%,90%);*/
-  background: rgb(97%,97%,97%);
+  background: url("/assets/img/cream_dust.png");
+}
+.page-header {
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.container > footer {
+  margin-top: 20px;
+}
+.container > footer p {
+  text-align: center; /* center align it with the container */
+}
+
+.post-container {
+
 }
 
 .post {
-  background: #F0F0F0;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+       -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+       -o-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
+  /*background: url("/assets/img/extra_clean_paper.png");*/
+}
+
+.post-header {
+  padding: 1px 20px 15px;
+  background-color: #F0F0F0;
+  background-image: -moz-linear-gradient(top, #ebebeb, #dcdcdc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ebebeb), to(#dcdcdc));
+  background-image: -webkit-linear-gradient(top, #ebebeb, #dcdcdc);
+  background-image: -o-linear-gradient(top, #ebebeb, #dcdcdc);
+  background-image: linear-gradient(to bottom, #ebebeb, #dcdcdc);
+  background-repeat: repeat-x;
+}
+
+.post-content {
+  /*font-family: "Baskerville", Times, serif;*/
+  /*font-size: 1rem;*/
+  background: white;
+  color: black;
+  line-height: 1.3;
+  margin: -1px 0 0 0;
+  overflow: hidden;
+  padding: 20px;
+  text-align: justify;
+}
+
+.post-after {
+  padding: 10px;
+  /*background: rgb(97%, 97%, 97%);*/
+}
+
+/* The white background content wrapper */
+.content {
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+}
+
+.sidebar {
+  padding: 10px 20px;
+  /*background: url("/assets/img/light_noise_diagonal.png");*/
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
      -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
        -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
@@ -35,48 +102,21 @@ body {
           box-sizing: border-box;
 }
 
-.post-header {
-  padding: 1px 20px 15px;
-}
+/*.sidebar h4 {
+  background: #F0F0F0;
+  padding: 2px 5px;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+       -o-border-radius: 2px;
+          border-radius: 2px;
+}*/
 
-.post-content {
-  /*font-family: "Baskerville", Times, serif;*/
-  /*font-size: 1rem;*/
-  background: white;
-  color: black;
-  line-height: 1.3;
-  margin: -1px 0 0 0;
-  overflow: hidden;
-  padding: 20px;
-  text-align: justify;
+h4 [class^="icon-"],
+h4 [class*=" icon-"] {
+  margin: 0 2px;
 }
-.navbar {
-  margin-bottom: 0;
-}
-.container > footer {
-  margin-top: 20px;
-}
-.container > footer p {
-  text-align: center; /* center align it with the container */
-}
-
-/* The white background content wrapper */
-.content {
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-     -moz-border-radius: 0 0 6px 6px;
-          border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-          box-shadow: 0 1px 2px rgba(0,0,0,.15);
-}
-
-/* Page header tweaks */
-.page-header {
-  background-color: #f0f0f0;
-  padding: 20px 20px 10px;
-  margin: -20px -20px 20px;
+.contact {
+  list-style-type: none;
 }
 
 .topbar .btn {
@@ -155,18 +195,24 @@ code {
 
 }
 
-.sidebar {
-  background: white;
-  -webkit-box-shadow: 0 0 15px 15px white;
-     -moz-box-shadow: 0 0 15px 15px white;
-       -o-box-shadow: 0 0 15px 15px white;
-          box-shadow: 0 0 15px 15px white;
+.post-list {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+       -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+       -o-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
+  /*background: url("/assets/img/extra_clean_paper.png");*/
+  padding: 5px 10px;
 }
+.post-list .name {
+}
+.post-list .list {
 
-h4 [class^="icon-"],
-h4 [class*=" icon-"] {
-  margin: 0 2px;
-}
-.contact {
-  list-style-type: none;
 }
