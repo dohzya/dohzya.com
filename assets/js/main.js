@@ -16,4 +16,5 @@ $(function(){
     $container.append($dropdown);
 
     $(".content h1").remove();
+    $(".post-list .name p").css("display", "inline");
 });
