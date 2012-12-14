@@ -1,4 +1,3 @@
-{% capture currentDate %}{{site.time | date: "%Y-%m-%d"}}{% endcapture %}
 <div class="post-list"><div class="name icon-pushpin">
 
 {% if current == "git-tips" %}
