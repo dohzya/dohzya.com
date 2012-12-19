@@ -49,7 +49,7 @@ body {
 
 }
 
-.post {
+.post, #contacts {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
      -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
        -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
@@ -63,6 +63,11 @@ body {
        -o-box-sizing: border-box;
           box-sizing: border-box;
   /*background: url("/assets/img/extra_clean_paper.png");*/
+}
+
+#contacts {
+  padding: 10px;
+  background-color: white;
 }
 
 .post-header {
