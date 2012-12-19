@@ -71,13 +71,14 @@ body {
 }
 
 .post-header {
-  padding: 1px 20px 15px;
-  background-color: #F0F0F0;
-  background-image: -moz-linear-gradient(top, #ebebeb, #dcdcdc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ebebeb), to(#dcdcdc));
-  background-image: -webkit-linear-gradient(top, #ebebeb, #dcdcdc);
-  background-image: -o-linear-gradient(top, #ebebeb, #dcdcdc);
-  background-image: linear-gradient(to bottom, #ebebeb, #dcdcdc);
+  padding: 1px 15px 2px;
+  background: url("/assets/img/extra_clean_paper.png");
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(140,140,140,0.3) 100%), url("/assets/img/extra_clean_paper.png"); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235,235,255)), color-stop(100%,rgba(200,2001400,0.3))), url("/assets/img/extra_clean_paper.png"); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(140,140,140,0.3) 100%), url("/assets/img/extra_clean_paper.png"); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(140,140,140,0.3) 100%), url("/assets/img/extra_clean_paper.png"); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(140,140,140,0.3) 100%), url("/assets/img/extra_clean_paper.png"); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(140,140,140,0.3) 100%), url("/assets/img/extra_clean_paper.png"); /* W3C */
   background-repeat: repeat-x;
 }
 
@@ -96,6 +97,10 @@ body {
 .post-after {
   padding: 10px;
   /*background: rgb(97%, 97%, 97%);*/
+}
+
+.post .tags {
+  float: right;
 }
 
 /* The white background content wrapper */
@@ -184,6 +189,14 @@ h1 {
 h2, h3, h4, h5 {
   margin-top: 1em;
   margin-bottom: 0.5em;
+}
+
+.title {
+  margin-top: 0.3em;
+}
+
+.title .subtitle {
+  text-shadow: 1px 1px 1px white;
 }
 
 code {
