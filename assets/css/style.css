@@ -193,10 +193,10 @@ h2, h3, h4, h5 {
 
 .title {
   margin-top: 0.3em;
+  text-shadow: 1px 1px 1px white;
 }
 
 .title .subtitle {
-  text-shadow: 1px 1px 1px white;
 }
 
 code {
