@@ -12,7 +12,7 @@ tags: [css]
 
 Il est assez courant d'utiliser des textures pour donner du relief à certaines parties d'une interface… pour briser la monotonie des fonds parfaitement uniformes.
 
-Le problème c'est que ces textures sont de simples images utilisée en fond. On ne peut donc pas (à ma connaissance) leur appliquer toute la panoplie de filtres fournis pas CSS(3).
+Le problème est que ces textures sont de simples images utilisées en fond. On ne peut donc pas (à ma connaissance) leur appliquer toute la panoplie de filtres fournis par CSS(3).
 
 Voici donc la technique que j'ai trouvé : réaliser un dégradé transparent au dessus d'une image. De cette manière, la zone possède bien une texture, et le dégradé servira à lui ajouter une ombre dynamiquement.
 
@@ -37,4 +37,4 @@ background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(140,140,140
 background-repeat: repeat-x;
 {% endhighlight %}
 
-Note : je ne suis pas _du tout_ un expert CSS, donc vous trouverez sans doute à redire de cette utilisation de linear-gradiant. Sachez que ce post ne cherche en aucun cas à servir de référence, l'idée est juste de montrer que ça existe®. Cependant je suis toujours féru de nouvelles informations, donc n'hésitez pas à me faire part de vos remarques.
+Note : je ne suis pas _du tout_ un expert CSS, donc vous trouverez sans doute à redire sur cette utilisation de linear-gradiant. Sachez que ce post ne cherche en aucun cas à servir de référence, l'idée est juste de montrer que ça existe®. Cependant je suis toujours féru de nouvelles informations, donc n'hésitez pas à me faire part de vos remarques.
