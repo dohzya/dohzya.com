@@ -1,6 +1,5 @@
 ---
 title:  Hello, World!
-tagline:  
 author: Étienne VALLETTE d'OSIA
 language: French
 layout: post
