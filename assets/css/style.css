@@ -241,6 +241,7 @@ code {
        -o-box-sizing: border-box;
           box-sizing: border-box;
   /*background: url("/assets/img/extra_clean_paper.png");*/
+  background: url("/assets/img/cream_dust.png");
   padding: 5px 10px;
 }
 .post-list .name {
