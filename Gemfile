@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'jekyll'
-gem 'liquid'
+gem 'jekyll', '0.11.0'
+gem 'liquid', '2.2.2'
 gem 'pygments.rb', require: 'pygments'
 gem 'maruku'
