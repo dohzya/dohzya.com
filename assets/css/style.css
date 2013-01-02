@@ -45,6 +45,13 @@ body {
   text-align: center; /* center align it with the container */
 }
 
+.navbar-inner {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+       -o-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
 .post-container {
 
 }
