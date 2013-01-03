@@ -50,6 +50,9 @@ body {
      -moz-border-radius: 0 0 4px 4px;
        -o-border-radius: 0 0 4px 4px;
           border-radius: 0 0 4px 4px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
 }
 
 .post-container {
