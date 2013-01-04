@@ -11,18 +11,6 @@
             <div class="span4">
               <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
             </div>
-            <div class="span8">
-              <div class="tags">
-                {% assign tags_list = page.tags %}
-                {% if tags_list != empty %}
-                  <i class="icon-tags"></i>
-                  {% for tag in tags_list %}
-                    <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a>
-                  {% endfor %}
-                {% endif %}
-                {% assign tags_list = nil %}
-              </div>
-            </div>
           </div>
         </div>
         <div class="post-content">
