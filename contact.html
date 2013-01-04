@@ -14,7 +14,28 @@ group: navigation
           <div class="span1">
             <img src="http://www.gravatar.com/avatar/e257c17034ca33ea3f75574f6b22e402.png" alt="avatar" />
           </div>
-          <div class="span11">
+          <div class="span9">
+            {% capture blabla %}
+
+I'm interested in new technologies, programming languages, human languages, Science, History, beta-testing things… Ok I think I actually love to learn, play with stuffs, and hack them a bit.
+
+I used to be a [Ruby][ruby] ([RoR][ror] & [Sinatra][sinatra]) addict, playing with meta-programmation and reflection.
+
+I currenly work at [Zenexity][zenexity], where I learned (to love) [Scala][scala] with [Play! framework][play], and I now lost myself into Type-safety and Fonctional Programming.
+
+What else can I say? Yes, one thing: one day, I will put a <strike>real</strike> better introduction of myself ☺
+
+[ruby]: http://www.ruby-lang.org/
+[ror]: http://rubyonrails.org/
+[sinatra]: http://www.sinatrarb.com/
+[scala]: http://www.scala-lang.org/
+[play]: http://www.playframework.org/
+[zenexity]: http://zenexity.com/
+
+            {% endcapture %}
+            {{ blabla | markdownify }}
+          </div>
+          <div class="span2">
             <ul class="contact">
               <li>
                 <i class="icon-twitter"></i> : <a href="https://twitter.com/dohzya">@dohzya</a>
