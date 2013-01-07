@@ -52,7 +52,7 @@
       </ul>
     {% endunless %}
 
-      <h4>Other posts</h4>
+      <h4><i class="icon-time"></i>Other posts</h4>
       {% assign posts_collate = site.posts %}
       {% for post in posts_collate  %}
         {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
