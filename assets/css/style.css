@@ -168,12 +168,14 @@ h4 [class*=" icon-"] {
 	float:left;
 }
 .tag_box a {
-	padding: 3px 6px;
-	margin: 2px;
+  padding: 3px 6px;
+  margin: 2px;
+  text-decoration:none;
+}
+.tag_box a:hover {
 	background: #eee;
 	color:#005F6B;
 	border-radius: 3px;
-	text-decoration:none;
 }
 .tag_box a span{
 	vertical-align:super;
