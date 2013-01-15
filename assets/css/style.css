@@ -119,6 +119,15 @@ body {
   /*background: rgb(97%, 97%, 97%);*/
 }
 
+.post-after .pagination {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.post-after .pagination + hr {
+  margin-top: 0;
+}
+
 .post .tags {
   float: right;
 }
