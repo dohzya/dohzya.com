@@ -1,0 +1,32 @@
+gems: ["emoji_for_jekyll", 'jekyll_oembed']
+
+# Site settings
+title: dohzysmes
+description: ""
+baseurl: ""
+url: "http://dohzya.com"
+author:
+  name: Étienne VALLETTE d'OSIA
+  nickname: dohzya
+  email: dohzya@gmail.com
+  github: dohzya
+  twitter: dohzya
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num"
+
+sitemap:
+  file: "/sitemap.xml"
+  exclude:
+    - "/atom.xml"
+    - "/feed.xml"
+    - "/feed/index.xml"
+  include_posts:
+    - "/index.html"
+  change_frequency_name: "change_frequency"
+  priority_name: "priority"

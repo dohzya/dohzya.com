@@ -1,0 +1,23 @@
+---
+group: navigation
+header:
+layout: default
+permalink: /archive/
+title: Archive
+---
+
+<div class="home">
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li class="content">
+        <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        {% if post.tagline %}
+        <span class="tagline">{{ post.tagline }}</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

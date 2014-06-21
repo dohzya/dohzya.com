@@ -1,0 +1,62 @@
+<div class="post-list content">
+  <article class="post-list-content">
+    <div class="name icon-pushpin">
+      {% if include.current == "git-tips" %}
+      <b>Git tips</b>
+      {% else %}
+      <a href="{% post_url 2013-01-02-git-tips %}">Git tips</a>
+      {% endif %}
+    </div>
+    <ol class="list">
+      <li>
+        {% if include.current == "part1" %}
+        <b>Quelques idées sur la manière de travailler avec Git</b>
+        {% else %}
+        <a href="{% post_url 2013-01-03-git-tips-1 %}">Quelques idées sur la manière de travailler avec Git</a>
+        {% endif %}
+      </li>
+      <li>
+        {% if include.current == "part2" %}
+        <b>Oubliez SVN</b>
+        {% else %}
+        <a href="{% post_url 2013-01-10-git-tips-2 %}">Oubliez SVN</a>
+        {% endif %}
+      </li>
+      <li>
+        {% if include.current == "part3" %}
+        <b>Le cas de git push</b>
+        {% else %}
+        <a href="{% post_url 2013-01-17-git-tips-3 %}">Le cas de git push</a>
+        {% endif %}
+      </li>
+      <li>
+        {% if include.current == "part4" %}
+        <b>`git pull` ou `git fetch` ?</b>
+        {% else %}
+        <a href="{% post_url 2013-01-24-git-tips-4 %}"><code>git pull</code> ou <code>git fetch</code> ?</a>
+        {% endif %}
+      </li>
+      <li>
+        {% if include.current == "part5" %}
+        <b>Réécrire l'histoire</b>
+        {% else %}
+        <a href="{% post_url 2013-01-31-git-tips-5 %}">Réécrire l'histoire</a>
+        {% endif %}
+      </li>
+      <li>
+        {% if include.current == "part6" %}
+        <b>Git gibs</b>
+        {% else %}
+        <a href="{% post_url 2013-02-07-git-tips-6 %}">Git gibs</a>
+        {% endif %}
+      </li>
+      <li>
+        {% if include.current == "part7" %}
+        <b>Configuration</b>
+        {% else %}
+        <a href="{% post_url 2013-02-14-git-tips-7 %}">Configuration</a>
+        {% endif %}
+      </li>
+    </ol>
+  </article>
+</div>
